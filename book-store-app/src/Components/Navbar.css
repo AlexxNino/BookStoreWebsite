@@ -5,16 +5,16 @@
     left: 0;
     width: 100%;
     display: flex;
-    justify-content: space-between; 
+    /* justify-content: space-between;  */
     align-items: center;
-    padding: 10px 20px; 
+    /* padding: 10px 20px;  */
     z-index: 100;
 
     /* Gradient Line CSS  */
-    border-bottom: 1px solid transparent;
+    /* border-bottom: 1px solid transparent;
     background: linear-gradient(to right, transparent, #000 0%, transparent) bottom;
     background-size: 100% 1px;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
   }
   
   .logo {

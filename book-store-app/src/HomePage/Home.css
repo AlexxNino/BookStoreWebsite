@@ -4,6 +4,10 @@
     padding: 20px;
     align-items: center;
     justify-content: space-between;
+    /* background-image: url(.../public/assets/paul-earle-xJ2tjuUHD9M-unsplash.jpg); */
+    background-image: url(c:/Users/Alexn/Desktop/LearnWordPress/book-store-app/public/assets/paul-earle-xJ2tjuUHD9M-unsplash.jpg);
+    background-size: cover;
+    border: 1px solid black;
     
   }
 .home-text {
@@ -18,6 +22,18 @@
   object-fit: contain;
   margin-right: 90px; 
 }
+.products{
+  padding-bottom: 40px;
+}
+.featured-books-header{
+  text-align: center;
+
+  border-bottom: 1px solid transparent;
+  background: linear-gradient(to right, transparent, #000 50%, transparent) bottom;
+  background-size: 50% 1px;
+  background-repeat: no-repeat;
+}
+
   /* .home h1 {
     font-size: 3em;
     margin-bottom: 20px;

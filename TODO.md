@@ -18,15 +18,15 @@
   - [x] Create placeholder pages for each route.
 
 ## 3. Home Page
-- [ ] **Design the Home Page**
+- [x] **Design the Home Page**
   - [x] Add a hero section with a welcome message and an image.
-  - [ ] Create a section for featured books.
+  - [x] Create a section for featured books.
   - [x] Add a call-to-action button (e.g., "Shop Now").
   - [x] Style the home page for responsiveness.
 
 ## 4. Products Page
 - [ ] **Design the Products Page**
-  - [ ] Fetch and display a list of books from the API.
+  - [x] Fetch and display a list of books from the API.
   - [ ] Implement search and filtering functionality.
   - [ ] Style the product cards for consistency with the website theme.
 

@@ -2,6 +2,9 @@ import './Home.css';
 import Button from '@mui/material/Button';
 import { styled } from '@mui/material/styles';
 import { Link } from 'react-router-dom';
+import BookCarousel from '../Components/BookCarousel.js';
+import React, { useEffect, useState } from 'react';
+
 
 
 
@@ -15,6 +18,15 @@ const CustomButton = styled(Button)({
 });
 
 function Home() {
+  const [books, setBooks] = useState([]);
+
+  useEffect(() => {
+    // Fetch the books from the API
+    fetch('http://localhost:3000/books')
+      .then((response) => response.json())
+      .then((data) => setBooks(data))
+      .catch((error) => console.error('Error fetching books:', error));
+  }, []);
   return (
     <div>
       <div className="home">
@@ -27,9 +39,13 @@ function Home() {
           alt="Book Stack"
         />
       </div>
+      <div className="featured-books">
+        <h2 className='featured-books-header'>Featured Books</h2>
+        <BookCarousel books={books} />
+      </div>
       <div className="products">
           <Link to="/products">
-            <CustomButton variant="outlined">View More</CustomButton>
+            <CustomButton variant="outlined">Shop Now</CustomButton>
           </Link>
         </div>
     </div>

@@ -7,16 +7,17 @@ html, body {
 }
 
 .app-container{
-  background-image: url(../public/assets/paul-earle-xJ2tjuUHD9M-unsplash.jpg);
+  /* background-image: url(../public/assets/paul-earle-xJ2tjuUHD9M-unsplash.jpg); */
   background-size: cover;
   background-position: center;
   min-height: 100vh;
+  background-color: white;
 }
 
 .page-content {
   color: black;
   padding: 20px;
-  min-height: 70vh; 
+  min-height: 100vh; 
 }
 
 footer {
