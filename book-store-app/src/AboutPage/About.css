@@ -1,4 +1,9 @@
 .about {
     font-family: 'Poppins', sans-serif;
     text-align: left;
+    border: 1px solid black;
+    padding: 20px;
+}
+.text{
+    padding: 80px;
 }
