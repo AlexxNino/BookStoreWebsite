@@ -4,8 +4,8 @@
     padding: 20px;
     align-items: center;
     justify-content: space-between;
-    /* background-image: url(.../public/assets/paul-earle-xJ2tjuUHD9M-unsplash.jpg); */
-    background-image: url(c:/Users/Alexn/Desktop/LearnWordPress/book-store-app/public/assets/paul-earle-xJ2tjuUHD9M-unsplash.jpg);
+    background-image: url('./asset/paul-earle-xJ2tjuUHD9M-unsplash.jpg');
+    /* background-image: url(c:/Users/Alexn/Desktop/LearnWordPress/book-store-app/public/assets/paul-earle-xJ2tjuUHD9M-unsplash.jpg); */
     background-size: cover;
     border: 1px solid black;
     
