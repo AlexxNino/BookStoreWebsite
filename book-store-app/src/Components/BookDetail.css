@@ -1,0 +1,42 @@
+.body1 {
+    border: 1px solid black;
+}
+
+.book-detail1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; 
+    /* border: 1px solid #979797; */
+    width: 80%;              
+    margin: 0 auto;            
+    padding: 20px;
+}
+
+.book-info1 {
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid red;  */
+    margin-right: 20px; 
+    flex-grow: 1; 
+}
+
+.book-info1 h1 {
+    font-size: 24px; 
+    /* border: 1px solid blue;  */
+}
+
+.book-image1 {
+    /* border: 1px solid green; */
+    width: 400px; 
+    margin-left: 20%;
+}
+
+.book-detail1 img {
+    width: 400px;
+    height: auto; 
+    max-width: 100%; 
+}
+.book-review1{
+    align-items: center;
+    border: 1px solid red;
+}

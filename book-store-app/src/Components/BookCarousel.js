@@ -1,5 +1,6 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Link } from 'react-router-dom';
 //import './swiper/swiper-bundle.css'; 
 import './BookCarousel.css';
 // import 'swiper/css/navigation'; Removed side buttons, they are not working properly.
@@ -11,8 +12,8 @@ import 'swiper/css'
 function BookCarousel({ books }) {
   return (
     <Swiper
-      spaceBetween={10}
-      slidesPerView={3}
+      spaceBetween={0}
+      slidesPerView={4}
       navigation
       pagination={{ clickable: true }}
       autoplay={{ delay: 3000 }}
@@ -20,13 +21,15 @@ function BookCarousel({ books }) {
     >
       {books.map((book) => (
         <SwiperSlide key={book.id}>
-          <div className="book-card">
-            <img src={book.imagePath} alt={book.name} className="book-image" />
-            <div className="book-info">
-              <h4>{book.name}</h4>
-              <p>${book.price}</p>
+          <Link to={`/book/${book.id}`}>
+            <div className="book-card1">
+              <img src={book.imagePath} alt={book.name} className="book-image" />
+              <div className="book-info">
+                <h4>{book.name}</h4>
+                <p>${book.price}</p>
+              </div>
             </div>
-          </div>
+          </Link>
         </SwiperSlide>
       ))}
     </Swiper>

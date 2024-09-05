@@ -1,40 +1,48 @@
-
 .card {
-    /* border: 1px solid #ddd; */
+    display: flex;
+    align-items: center; /* Align items vertically in the center */
     border-radius: 8px;
     padding: 16px;
-    margin: 0;
-    text-align: center;
-    /* background-color: #f9f9f9; */
-    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    margin: 20px 0; /* Add space between cards */
+    text-align: left;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s;
-    font-size: smaller;
-    width: 150px;
+    width: 100%;
+    max-width: 800px; /* Adjust the width of the card */
+    /* border: 2px solid #000; */
 }
-
 
 .card:hover {
     transform: translateY(-5px);
 }
 
 .card-image {
-    max-width: 100%;
+    max-width: 150px; /* Control the size of the image */
     height: auto;
     border-radius: 4px;
-    margin-bottom: 10px;
+    margin-right: 20px; /* Space between image and content */
 }
 
 .card-content {
-    padding: 10px 0;
+    display: flex;
+    justify-content: space-between; /* Spread the title and price */
+    align-items: center; /* Vertically align the text and price */
+    width: 100%; /* Take full width of the card */
 }
 
 .card-content h4 {
-    margin: 10px 0;
-    font-size: 1.2em;
+    margin: 0;
+    font-size: 1.5em;
+    color: black;
+    flex-grow: 1; /* Push the title to the left */
+    text-align: center; /* Center the title */
 }
 
-.card-content p {
-    color: #333;
+.card-price {
     font-weight: bold;
-    margin: 0;
+    color: black;
+    font-size: 1.2em;
+    white-space: nowrap; /* Prevent wrapping of price */
+    margin-left: auto; /* Push the price to the far right */
 }

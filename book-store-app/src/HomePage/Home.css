@@ -22,8 +22,12 @@
   object-fit: contain;
   margin-right: 90px; 
 }
-.products{
+.products-button{
   padding-bottom: 40px;
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  
 }
 .featured-books-header{
   text-align: center;
@@ -33,20 +37,3 @@
   background-size: 50% 1px;
   background-repeat: no-repeat;
 }
-
-  /* .home h1 {
-    font-size: 3em;
-    margin-bottom: 20px;
-  } */
-  
-  /* .home p {
-    font-size: 1.5em;
-    margin-bottom: 30px;
-  }
-  
-  .featured-books {
-    margin-top: 40px;
-  }
-  footer {
-    margin-top: auto; 
-  } */
