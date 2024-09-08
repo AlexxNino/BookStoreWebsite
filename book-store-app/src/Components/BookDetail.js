@@ -10,7 +10,8 @@ const CustomButton1 = styled(Button)({
   '&:hover': {
     border: '2px solid black', 
   },
-
+  width: '10%',
+  padding: '10px 20px',
 });
 
 const BookDetail = ({ books }) => {
@@ -31,9 +32,8 @@ const BookDetail = ({ books }) => {
             <p className='Rating'>Rating: {book.rating}</p>
             <p className='book-desc1'>Description: {book.description}</p>
             <p className='book-price1'>Price: ${book.price}</p>
-            <CustomButton1 variant='outlined'>Add to Bag</CustomButton1>
+            <CustomButton1 className='book-stuff1' variant='outlined'>Add to Bag</CustomButton1>
         </div>
-        
       </div>
         <div className='book-review1'>
         <h3>Reviews:</h3>

@@ -1,6 +1,26 @@
+.grid-container {
+  display: flex;
+  justify-content: center; /* Center the grid */
+}
+
 .products-page {
   padding: 20px;
   text-align: center;
+}
+
+.boy-reading { 
+  position: absolute;
+  z-index: 1;
+  left: 5%;
+  /* scale: 150%; */
+  opacity: .2;
+}
+.book-img1 {
+  position: absolute;
+  z-index: 1;
+  right: 10%;
+  bottom: 10%;
+  opacity: .2;
 }
 
 .products-page h1 {
@@ -8,56 +28,57 @@
   margin-bottom: 20px;
   border-bottom: 1px solid transparent;
   background: linear-gradient(to right, transparent, #000 50%, transparent) bottom;
-  background-size: 50% 1px;
+  background-size: 10% 1px;
   background-repeat: no-repeat;
 }
 
 .book-list {
-  display: flex;
-  flex-direction: column; /* Stack book items vertically */
-  gap: 20px;               /* Space between each book item */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns */
+  gap: 20px; /* Space between each item */
   padding: 10px;
 }
 
 .book-item {
   display: flex;
-  align-items: center;      /* Align image, title, and price vertically */
+  flex-direction: column; /* Stack content vertically inside the item */
+  align-items: center; 
   width: 100%;
-  max-width: 800px;         /* Limit the maximum width of each book item */
-  margin: 0 auto;           /* Center the book item within the page */
   padding: 20px;
-  border: 1px solid #ddd;   /* Add a border to each book item */
   border-radius: 8px;
-  background-color: #f9f9f9; /* Background color for the book item */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add some shadow */
+  /* background-color: #f9f9f9; */
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  Optional: Add some shadow */
+
+}
+.book-item:hover {
+  background-color: rgba(0, 138, 252 , .1); /* Change background color on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add a bigger shadow */
+  transform: translateY(-5px); /* Slightly move the item up */
 }
 
 .book-image {
-  max-width: 150px;        /* Image size for list layout */
+  max-width: 100%; /* Ensure the image fits the container */
   height: auto;
   border-radius: 4px;
-  margin-right: 20px;      /* Space between image and content */
+  margin-bottom: 20px; /* Space between image and content */
 }
 
 .book-details {
   display: flex;
-  justify-content: space-between;
-  flex-grow: 1;            /* Allow the details section to grow */
-  align-items: center;      /* Vertically center the title and price */
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
 }
 
 .book-title {
   font-size: 1.5em;
   color: black;
-  text-align: left;
-  flex-grow: 1;
+  margin-bottom: 10px;
 }
 
 .book-price {
   font-size: 1.2em;
   font-weight: bold;
   color: black;
-  text-align: right;
-  margin-left: auto;        /* Push the price to the far right */
-  white-space: nowrap;      /* Prevent price from wrapping */
+  white-space: nowrap; /* Prevent price from wrapping */
 }

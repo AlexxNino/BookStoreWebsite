@@ -85,6 +85,13 @@ function Products() {
   return (
     <div className="products-page">
       <h1>Our Products</h1>
+      <img className="boy-reading" 
+      src="/assets/A_cartoony_2D_illustration_of_a_person_reading_a_book__matching_the_same_clean_and_playful_style_as_previous_assets._The_person_is_seated_comfortably_-removebg-preview.png"
+      alt="boy reading"/>
+      <img className='book-img1'
+      src='/assets/The_book_has_a_simple__flat_design_with_clear_lines__minimal_details__and_a_blue_co-removebg-preview.png'
+      alt="book"/>
+      <div className="grid-container">
       <div className="book-list">
         {books.map(book => (
           <Link to={`/book/${book.id}`} key={book.id} className="book-item-link">  {/* Wrap book item in Link */}
@@ -98,6 +105,7 @@ function Products() {
             </div>
           </Link>
         ))}
+      </div>
       </div>
     </div>
   );

@@ -1,5 +1,5 @@
 .body1 {
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 .book-detail1 {
@@ -7,7 +7,7 @@
     justify-content: space-between;
     align-items: flex-start; 
     /* border: 1px solid #979797; */
-    width: 80%;              
+    /* width: 80%;               */
     margin: 0 auto;            
     padding: 20px;
 }
@@ -29,6 +29,7 @@
     /* border: 1px solid green; */
     width: 400px; 
     margin-left: 20%;
+    margin-right: 5%;
 }
 
 .book-detail1 img {
@@ -38,5 +39,5 @@
 }
 .book-review1{
     align-items: center;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }

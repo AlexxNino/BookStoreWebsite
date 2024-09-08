@@ -15,6 +15,7 @@
     background: linear-gradient(to right, transparent, #000 0%, transparent) bottom;
     background-size: 100% 1px;
     background-repeat: no-repeat; */
+    border-bottom: 1px solid black;
   }
   
   .logo {
