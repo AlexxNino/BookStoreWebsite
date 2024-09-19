@@ -35,16 +35,21 @@ const BookDetail = ({ books }) => {
             <CustomButton1 className='book-stuff1' variant='outlined'>Add to Bag</CustomButton1>
         </div>
       </div>
-        <div className='book-review1'>
+      <div className='book-details-divider'/>
+      <div className='book-review1'>
         <h3>Reviews:</h3>
-            <ul>
-              {book.reviews.map((review, index) => (
-                <li key={index}>
-                  <strong>{review.reviewer}:</strong> {review.comment}
-                </li>
-              ))}
-            </ul>
-        </div>
+        <ul className="review-list">
+          {book.reviews.map((review, index) => (
+            <li key={index} className="review-item">
+              <div className="review-header">
+                <strong>{review.reviewer}</strong>
+                <span className="review-date"> - {"01/01/2024"}</span>
+              </div>
+              <p className="review-comment">{review.comment}</p>
+            </li>
+          ))}
+        </ul>
+      </div>
     </div>
   );
 };

@@ -37,7 +37,55 @@
     height: auto; 
     max-width: 100%; 
 }
-.book-review1{
-    align-items: center;
-    /* border: 1px solid red; */
-}
+
+.book-details-divider {
+    margin: 40px 0;
+    border-top: 1px solid #ccc; /* Thin line divider */
+    width: 100%;
+  }
+
+.book-review1 {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .book-review1 h3 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  .review-list {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .review-item {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 5px;
+    border: 1px solid #e0e0e0;
+  }
+  
+  .review-header {
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 8px;
+  }
+  
+  .review-date {
+    font-size: 0.9em;
+    color: #777;
+    margin-left: 10px;
+  }
+  
+  .review-comment {
+    font-size: 1.1em;
+    color: #555;
+    line-height: 1.4;
+  }
+  
